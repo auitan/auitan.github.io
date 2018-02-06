@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Сайт-Портфолио</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-7 header-img">
+					<img src="img/main-img_2.png" alt="">
+				</div>
+				<div class="col-xs-12 col-sm-5 header-text">
+					<p class="header-pretittle">Web-разработчик</p>
+					<p class="header-tittle">Сергей Сухаревский</p>
+					<p class="header-posttittle">Верстка на HTML/CSS<br>
+					Разработка сайтов под ключ</p>
+					<button class="header-btn"><span class="btn-text">Связаться</span></button>
+					<small>*Это бесплатно</small>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<section class="portfolio">
+		<div class="container portfolio-cnt">
+			<p class="portfolio-cnt-text">ПОРТФОЛИО</p>
+			<p class="portfolio-cnt-text-works">Мои работы</p>
+			<div class="row portfolio-cnt-works">
+				<div class="work-example exampl-1 col-xs-12 col-sm-12 col-md-6">
+					<div class="work-wrap">
+						<img src="img/portfolio-img-1.png" alt="">
+						<p class="work-example-header">Внутренний университет «Газпром нефти»</p>
+						<p class="work-example-description">У «Газпром нефти» есть внутренний Корпоративный университет для сотрудников. Это настоящий университет, где сотрудники проходят обучение у внутренних тренеров компании или у специально приглашенных лекторов и экспертов....</p>
+						<a class="check-work" href="">Смотреть работу</a>
+					</div>
+				</div>
+				<div class="work-example exampl-2 col-xs-12 col-sm-12 col-md-6">
+					<div class="work-wrap">
+						<img src="img/portfolio-img-2.png" alt="">
+						<p class="work-example-header">Сайт платежной системы «Мир»</p>
+						<p class="work-example-description">Обновленная версия сайта знакомит посетителей с компаниями, уже принимающими карты к оплате, и приглашает всех остальных присоединиться к проекту...</p>
+						<a class="check-work" href="">Смотреть работу</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="row footer-info">
+				<div class="col-xs-12 col-md-4 footer-cols  text-center">
+					<h3>Сергей Сухаревский</h3>
+					<p>Разработка сайтов</p>
+				</div>
+				<div class="col-xs-12 col-md-4 footer-cols  text-center">
+					<p>Подпишитесь:</p>
+					<div class="socials">
+						<a href=""><img src="img/socials/facebook-logo-button.png" alt=""></a>
+						<a href=""><img src="img/socials/vk-social-logotype.png" alt=""></a>
+						<a href=""><img src="img/socials/telegram-symbol.png" alt=""></a>
+						<a href=""><img src="img/socials/youtube-symbol.png" alt=""></a>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-4 footer-cols  text-center footer-call">
+					<p>Напишите мне:</p>
+					<button>Написать</button>
+				</div>
+			</div>
+		</div>
+	</footer>
+    <!-- Модальное окно -->
+	<div class="overlay">
+		<span class="close-form">&times</span>
+		<div class="modal" id="modal">
+			<form id="main-form" action="#">
+				<input class="modal-input" type="text" id="userName" placeholder="Ваше Имя">
+				<input class="modal-input" type="email" id="userEmail" placeholder="Ваш Email">
+				<button class="modal-btn">Отправить</button>
+			</form>
+		</div>
+	</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+    	$(document).ready(function() {
+    		$(".header-btn").click(function() {
+    			$(".overlay").show(300);
+    		$(".close-form").click(function() {
+    			$(".overlay").hide(300);
+    		})
+    		});
+
+    	})
+    </script>
+  </body>
+</html>.
