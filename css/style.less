@@ -1,5 +1,6 @@
 
 
+
 .roboto-reg {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
@@ -56,6 +57,12 @@ header {
 		border-radius: 25px;
 		margin-top: 33px;
 		box-shadow: 10px 17px 34px 6px rgba(18, 61, 145, 0.83);
+		-webkit-transition: 0.2s;
+		-o-transition: 0.2s;
+		transition: 0.2s;
+		&:hover {
+			box-shadow: none;
+		}
 		.btn-text {
 			.roboto-bld;
 			font-size: 18px;
@@ -166,6 +173,13 @@ footer {
 			border: 1px solid @bg-white;
 			background-color: #3a7dfd;
 			margin-left: 10px;
+			-webkit-transition: 0.2s;
+			-o-transition: 0.2s;
+			transition: 0.2s;
+			&:hover {
+				color: @dark-blue;
+				background-color: @bg-white;
+			}
 		}
 	}
 	.socials a:not(:last-child) {
@@ -242,6 +256,8 @@ footer {
 		-ms-border-radius: 25px;
 		-o-border-radius: 25px;
 		border-radius: 25px;
+		transition: 0.2s;
+		
 	}
 	&-input {
 		text-align: center;
@@ -280,3 +296,12 @@ footer {
 	}
 }
 
+button:active, button:active {
+    outline: none !important;
+   
+}
+
+.modal-btn:hover {
+			color: @dark-blue;
+			background-color: @bg-white;
+		}
