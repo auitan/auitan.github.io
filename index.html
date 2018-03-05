@@ -127,15 +127,15 @@
 				</div>
 				<div class="col-xs-12 col-md-4 footer-cols  text-center footer-call">
 					<p>Напишите мне:</p>
-					<button>Написать</button>
+					<button class="footer-btn">Написать</button>
 				</div>
 			</div>
 		</div>
 	</footer>
     <!-- Модальное окно -->
 	<div class="overlay">
-		<span class="close-form">&times</span>
 		<div class="modal" id="modal">
+			<span class="close-form">&times</span>
 			<form id="main-form" action="#">
 				<input class="modal-input" type="text" id="userName" placeholder="Ваше Имя">
 				<input class="modal-input" type="email" id="userEmail" placeholder="Ваш Email">
@@ -150,7 +150,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script>
     	$(document).ready(function() {
-    		$(".header-btn").click(function() {
+    		$(".header-btn, .footer-btn").click(function() {
     			$(".overlay").show(300);
     		$(".close-form").click(function() {
     			$(".overlay").hide(300);
