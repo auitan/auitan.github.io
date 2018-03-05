@@ -195,6 +195,59 @@ footer {
 	margin-top: 20px;
 }
 
+//Настройка слик
+.slick-prev {
+	position: absolute;
+	top: 30%;
+	left: -100px;
+	height: 50px;
+	width: 50px;
+	border: none;
+	line-height: 60px;
+	color: #3a7dfd;
+	background-color: transparent;
+	
+	i {
+	 font-size: 50px;
+	 -webkit-transition: all 0.2s linear;
+	 -o-transition: all 0.2s linear;
+	 transition: all 0.2s linear;
+	}
+	&:hover {
+	 i {
+	 font-size: 55px;
+	 }
+	}
+}
+
+.slick-next {
+	position: absolute;
+	top: 30%;
+	right: -100px;
+	height: 50px;
+	width: 50px;
+	border: none;
+	line-height: 60px;
+	color: #3a7dfd;
+	background-color: transparent;
+	
+	i {
+	 font-size: 50px;
+	 -webkit-transition: all 0.2s linear;
+	 -o-transition: all 0.2s linear;
+	 transition: all 0.2s linear;
+	}
+	&:hover {
+	 i {
+	 font-size: 55px;
+	 }
+	}
+}
+
+
+button {
+	outline: none;
+}
 
 @media (min-width: 0) and (max-width: 768px) {
 	
@@ -215,6 +268,19 @@ footer {
 	small {
 		margin-right: 40px;
 	}
+
+	button.slick-prev {
+		display: none !important;
+	}
+
+	button.slick-next {
+		display: none !important;
+	}
+
+	.work-scroll {
+		margin-right: 30px;
+		margin-left: 30px;
+	}
 }
 
 
@@ -225,6 +291,17 @@ footer {
 	}
 	.exampl-1 {
 		margin-bottom: 30px;
+	}
+	button.slick-next.slick-arrow {
+		display: none;
+	}
+	button.slick-prev.slick-arrow {
+		display: none;
+	}
+
+	.work-scroll {
+		margin-right: 30px;
+		margin-left: 30px;
 	}
 }
 
